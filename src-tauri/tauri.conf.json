@@ -35,7 +35,7 @@
   },
   "bundle": {
     "active": true,
-    "targets": "all",
+    "targets": ["app", "dmg", "nsis"],
     "publisher": "共同照护",
     "copyright": "Copyright © 2026 共同照护. All rights reserved.",
     "category": "Productivity",
