@@ -1,0 +1,60 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "AutoCapture",
+  "version": "1.0.0",
+  "identifier": "com.ihealth.autocapture",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "macOSPrivateApi": true,
+    "windows": [
+      {
+        "label": "main",
+        "title": "Auto Capture",
+        "width": 644,
+        "height": 640,
+        "minWidth": 644,
+        "minHeight": 520,
+        "resizable": true,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": null,
+      "assetProtocol": {
+        "enable": true,
+        "scope": {
+          "allow": ["$HOME/**"]
+        }
+      }
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "publisher": "共同照护",
+    "copyright": "Copyright © 2026 共同照护. All rights reserved.",
+    "category": "Productivity",
+    "shortDescription": "在线会议 PPT 一键截图",
+    "longDescription": "录制在线会议中的 PPT 翻页，一键截图，自动归档。",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "macOS": {
+      "dmg": {
+        "background": "dmg/background.png",
+        "windowSize": { "width": 540, "height": 420 },
+        "appPosition": { "x": 140, "y": 150 },
+        "applicationFolderPosition": { "x": 400, "y": 150 }
+      }
+    }
+  }
+}

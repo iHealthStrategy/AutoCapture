@@ -1,0 +1,20 @@
+AutoCapture 安装说明
+==================================================
+
+1. 把左侧 AutoCapture 图标拖到右侧「应用程序」文件夹。
+
+2. 第一次打开 AutoCapture 时，如果提示
+     「无法打开 AutoCapture，因为来自身份不明的开发者」
+   请打开「终端」(Terminal)，复制下面这一行，粘贴回车：
+
+xattr -dr com.apple.quarantine /Applications/AutoCapture.app
+
+   之后即可双击正常打开，本步骤只需做一次。
+   （进阶：也可以在 Finder 里 右键点击 AutoCapture → 打开。）
+
+3. 启动后，请去
+     系统设置 → 隐私与安全性 → 屏幕录制
+   勾选 AutoCapture。
+
+4. 授权完成后，按 Cmd-Q 完全退出本 App 再重新打开，
+   屏幕录制权限才会对截屏进程生效。
