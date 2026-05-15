@@ -9,6 +9,11 @@ on:
     branches: [main]
   workflow_dispatch:
 
+# softprops/action-gh-release needs contents:write to create the draft.
+# New GitHub repos default GITHUB_TOKEN to read-only since Feb 2023.
+permissions:
+  contents: write
+
 jobs:
   build:
     name: ${{ matrix.label }}
