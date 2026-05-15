@@ -34,3 +34,6 @@ src-tauri/icons/ios
 # Python bytecode
 __pycache__
 *.pyc
+
+# Claude Code local state
+.claude
